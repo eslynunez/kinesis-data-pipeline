@@ -1,0 +1,44 @@
+{
+  "name": "kinesis-data-pipeline",
+  "description": "Infrastructure as code using AWS CDK for AWS Kinesis data pipelines leveraging streams, firehose, and analaytics.",
+  "version": "0.1.0",
+  "bin": {
+    "kinesis-data-pipeline": "bin/kinesis-data-pipeline.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eslynunez/kinesis-data-pipeline.git"
+  },
+  "keywords": [
+    "aws",
+    "kinesis",
+    "cdk",
+    "iac"
+  ],
+  "author": "eslynunez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eslynunez/kinesis-data-pipeline/issues"
+  },
+  "homepage": "https://github.com/eslynunez/kinesis-data-pipeline#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "aws-cdk": "2.10.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.10.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.16"
+  }
+}
