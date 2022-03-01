@@ -1,6 +1,8 @@
 const account = process.env.AWS_ACCOUNT_ID;
 const region = process.env.AWS_REGION;
 const deployEnv = process.env.ENV;
-const resourcePrefix = `${process.env.ENV?.toUpperCase}`;
+const projectName = process.env.PROJECT_NAME;
+const teamName = process.env.TEAM_NAME;
+const resourcePrefix = `${teamName?.toLowerCase()}-${deployEnv?.toLowerCase()}`;
 
-export { account, region, deployEnv, resourcePrefix }
+export { account, region, deployEnv, resourcePrefix, projectName, teamName }

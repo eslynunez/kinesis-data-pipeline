@@ -14,10 +14,7 @@ export class KinesisDataPipelineStack extends Stack {
     //   visibilityTimeout: cdk.Duration.seconds(300)
     // });
 
-    const dataStream = new kinesis.Stream( this, `${resourcePrefix}-DataStream`, { 
+    const dataStream = new kinesis.Stream( this, `${resourcePrefix}--data-stream`, {
     });
-
-    
-  
   }
 }

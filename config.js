@@ -1,0 +1,17 @@
+"use strict";
+var _a;
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.teamName = exports.projectName = exports.resourcePrefix = exports.deployEnv = exports.region = exports.account = void 0;
+const account = process.env.AWS_ACCOUNT_ID;
+exports.account = account;
+const region = process.env.AWS_REGION;
+exports.region = region;
+const deployEnv = process.env.ENV;
+exports.deployEnv = deployEnv;
+const projectName = process.env.PROJECT_NAME;
+exports.projectName = projectName;
+const teamName = process.env.TEAM_NAME;
+exports.teamName = teamName;
+const resourcePrefix = `${teamName.toLowerCase()}-${(_a = process.env.ENV) === null || _a === void 0 ? void 0 : _a.toLowerCase()}`;
+exports.resourcePrefix = resourcePrefix;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiY29uZmlnLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSxNQUFNLE9BQU8sR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLGNBQWMsQ0FBQztBQU9sQywwQkFBTztBQU5oQixNQUFNLE1BQU0sR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsQ0FBQztBQU1wQix3QkFBTTtBQUx4QixNQUFNLFNBQVMsR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQztBQUtSLDhCQUFTO0FBSm5DLE1BQU0sV0FBVyxHQUFHLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxDQUFDO0FBSVEsa0NBQVc7QUFIaEUsTUFBTSxRQUFRLEdBQUcsT0FBTyxDQUFDLEdBQUcsQ0FBQyxTQUFTLENBQUM7QUFHMkIsNEJBQVE7QUFGMUUsTUFBTSxjQUFjLEdBQUcsR0FBRyxRQUFRLENBQUMsV0FBVyxFQUFFLElBQUksTUFBQSxPQUFPLENBQUMsR0FBRyxDQUFDLEdBQUcsMENBQUUsV0FBVyxFQUFFLEVBQUUsQ0FBQztBQUVoRCx3Q0FBYyIsInNvdXJjZXNDb250ZW50IjpbImNvbnN0IGFjY291bnQgPSBwcm9jZXNzLmVudi5BV1NfQUNDT1VOVF9JRDtcbmNvbnN0IHJlZ2lvbiA9IHByb2Nlc3MuZW52LkFXU19SRUdJT047XG5jb25zdCBkZXBsb3lFbnYgPSBwcm9jZXNzLmVudi5FTlY7XG5jb25zdCBwcm9qZWN0TmFtZSA9IHByb2Nlc3MuZW52LlBST0pFQ1RfTkFNRTtcbmNvbnN0IHRlYW1OYW1lID0gcHJvY2Vzcy5lbnYuVEVBTV9OQU1FO1xuY29uc3QgcmVzb3VyY2VQcmVmaXggPSBgJHt0ZWFtTmFtZS50b0xvd2VyQ2FzZSgpfS0ke3Byb2Nlc3MuZW52LkVOVj8udG9Mb3dlckNhc2UoKX1gO1xuXG5leHBvcnQgeyBhY2NvdW50LCByZWdpb24sIGRlcGxveUVudiwgcmVzb3VyY2VQcmVmaXgsIHByb2plY3ROYW1lLCB0ZWFtTmFtZSB9Il19
